@@ -34,10 +34,8 @@ Este es un proyecto de encriptación y desencriptación de texto creado con HTML
 ├── index.html
 ├── styles.css
 ├── index.js
-└── Assets
-    └── img
-        ├── coding.png
-        └── error-page.png
+└── coding.png
+└── error-page.png
 
 ```
 ## Créditos

@@ -6,28 +6,28 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #f0f0f0;
 }
 
 header {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 main {
     width: 100%;
     max-width: 80%;
-    height: 60%;
     background: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-between;
-    gap: 60px; 
+    flex-direction: column;
+    gap: 20px;
 }
 
 .column {
-    width: 48%;
+    width: 100%;
     text-align: center;
 }
 
@@ -36,26 +36,32 @@ main {
     padding: 20px;
     border-radius: 10px;
 }
-center-container {
+
+.center-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-.waiting-text{
-    padding:4rem;
+
+.waiting-text {
+    padding: 2rem;
     font-size: larger;
     font-weight: bold;
 }
+
 .no-input-image {
     display: block;
     margin: 0 auto;
 }
+
 .image, .no-input-image {
-    width: 60%;
-    height: 60%;
+    width: 100%;
+    max-width: 60%;
+    height: auto;
 }
-textarea{
+
+textarea {
     height: 70%;
 }
 
@@ -70,8 +76,8 @@ button {
     cursor: pointer;
 }
 
-#copy-button{
-    margin-top: 5rem; 
+#copy-button {
+    margin-top: 2rem; 
 }
 
 #output-text, #copy-button {
@@ -84,4 +90,54 @@ button {
 
 footer {
     margin-top: 20px;
+    text-align: center;
+}
+
+/* responsiveness */
+@media (min-width: 576px) {
+    main {
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .waiting-text {
+        padding: 3rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .column {
+        width: 48%;
+    }
+}
+
+
+@media (min-width: 992px) {
+    main {
+        max-width: 70%;
+        gap: 50px;
+    }
+
+    .waiting-text {
+        padding: 3rem;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    main {
+        max-width: 60%;
+        gap: 60px;
+    }
+
+    .waiting-text {
+        padding: 4rem;
+    }
 }
